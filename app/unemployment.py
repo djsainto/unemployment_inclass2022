@@ -1,13 +1,11 @@
 #app\unemployment.py
-import requests
+import os
 import json
 from pprint import pprint
-from getpass import getpass
 
+import requests
 
-API_KEY = getpass("Please input your AlphaVantage API Key: ") 
-
-API_KEY = "demo"
+API_KEY = os.getenv("ALPHAVANTAGE_API_KEY")
 
 request_url = f"https://www.alphavantage.co/query?function=UNEMPLOYMENT&apikey={API_KEY}"
 
