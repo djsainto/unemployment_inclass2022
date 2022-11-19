@@ -2,12 +2,12 @@
 import os
 import json
 from pprint import pprint
-
 import requests
 from dotenv import load_dotenv
 from plotly.express import line
 load_dotenv()
 from plotly.express import line
+from statistics import mean
 
 API_KEY = os.getenv("ALPHAVANTAGE_API_KEY")
 
@@ -24,7 +24,10 @@ pprint(parsed_response)
 # What is the most recent unemployment rate? And the corresponding date? 
 # Display the unemployment rate using a percent sign.
 
-#breakpoint()
+data = parsed_response["data"]
 
-latest = parsed_response["data"][0]
-print(latest)
+print("-------------------------")
+print("LATEST UNEMPLOYMENT RATE:")
+#print(data[0])
+print(f"{data[0]['value']}%", "as of", data[0]["date"])
+
