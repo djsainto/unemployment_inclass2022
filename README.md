@@ -26,7 +26,7 @@ python app/unemployment.py
 
 ## Configuration
 
-Obtain an API Key from AlphaVantage
+[Obtain an API Key] from AlphaVantage
 
 Then create a local ".env" file and provide the key like this:
 
@@ -36,5 +36,11 @@ Then create a local ".env" file and provide the key like this:
 ALPHAVANTAGE_API_KEY="__________"
 
 ```
+Run stocks report:
+
+```sh
+python app/stocks.py
+```
+
 
 
