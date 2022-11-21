@@ -2,13 +2,17 @@
 
 print("STOCKS REPORT...")
 
-import os
-from dotenv import load_dotenv
-from pandas import read_csv
+import json
+from pprint import pprint
+import requests
+#from dotenv import load_dotenv
 
-load_dotenv()
+from plotly.express import line
+from statistics import mean
 
-API_KEY = os.getenv("ALPHAVANTAGE_API_KEY")
+#load_dotenv()
+
+from app.alpha import API_KEY
 
 symbol = input("Please input a crypto symbol (default: 'NFLX'): ") or "NFLX"
 print("SYMBOL:", symbol)

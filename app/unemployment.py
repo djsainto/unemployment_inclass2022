@@ -1,17 +1,17 @@
 #app\unemployment.py
-import os
+
 import json
 from pprint import pprint
 import requests
-from dotenv import load_dotenv
-from plotly.express import line
-load_dotenv()
+#from dotenv import load_dotenv
+
 from plotly.express import line
 from statistics import mean
 
-load_dotenv()
+#load_dotenv() 
 
-API_KEY = os.getenv("ALPHAVANTAGE_API_KEY")
+from app.alpha import API_KEY
+
 
 request_url = f"https://www.alphavantage.co/query?function=UNEMPLOYMENT&apikey={API_KEY}"
 

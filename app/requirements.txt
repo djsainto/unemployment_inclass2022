@@ -1,8 +1,12 @@
 #this is the requirement.txt file
 
 python-dotenv
+pgeocode
 pandas
 requests
 plotly
+sendgrid==6.6.0
 
+#TEST
 
+pytest
