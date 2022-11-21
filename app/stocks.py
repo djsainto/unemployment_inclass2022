@@ -2,15 +2,7 @@
 
 print("STOCKS REPORT...")
 
-import json
-from pprint import pprint
-import requests
-#from dotenv import load_dotenv
-
-from plotly.express import line
-from statistics import mean
-
-#load_dotenv()
+from pandas import read_csv
 
 from app.alpha import API_KEY
 
