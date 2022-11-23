@@ -48,6 +48,15 @@ def stocks_dashboard():
         return redirect("/stocks/form")
 
 
+
+
+
+
+
+
+
+
+
 #
 # API ROUTES
 #
